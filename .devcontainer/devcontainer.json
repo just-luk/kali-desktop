@@ -3,6 +3,6 @@
   "features": {
     "ghcr.io/devcontainers/features/docker-outside-of-docker:1": {}
   },
-  "onCreateCommand": "docker run -dp 6901:6901 -e DISABLE_VNC_SSL=1 -e VNC_PW=password justluk/kali-desktop",
+  "postCreateCommand": "docker run -dp 6901:6901 -e DISABLE_VNC_SSL=1 -e VNC_PW=password justluk/kali-desktop",
   "forwardPorts": [6901]
 }
