@@ -2,5 +2,7 @@
   "image": "mcr.microsoft.com/devcontainers/base",
   "features": {
     "ghcr.io/devcontainers/features/docker-outside-of-docker:1": {}
-  }
+  },
+  "postCreateCommand": "docker run -dp 6901:6901 -e DISABLE_VNC_SSL=1 -e VNC_PW=password justluk/kali-desktop",
+  "forwardPorts": [6901]
 }
