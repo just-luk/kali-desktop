@@ -2,7 +2,5 @@
   "image": "mcr.microsoft.com/devcontainers/base",
   "features": {
     "ghcr.io/devcontainers/features/docker-outside-of-docker:1": {}
-  },
-  "initializeCommand": "docker run -d -p 6901:6901 justluk/kali-desktop -e VNC_PW=password -e DISABLE_VNC_SSL=1",
-  "forwardPorts": [6901]
+  }
 }
